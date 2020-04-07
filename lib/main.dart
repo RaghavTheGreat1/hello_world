@@ -1,11 +1,18 @@
 import 'package:flutter/material.dart';
 
-void main(){
+void main() {
   runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
-    return MaterialApp(home: Text("\nHello-World! \nCreator: Raghav Joshi"),);
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text("Hello World!"),
+        ),
+        body: Text("Hello World! \nGlad to see you on board!"),
+      ),
+    );
   }
 }
